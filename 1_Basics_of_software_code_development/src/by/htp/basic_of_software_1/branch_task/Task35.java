@@ -17,9 +17,8 @@ public class Task35 {
 		
 		if (day <= 0 || day > 365) {			
 			System.out.println("Что-то пошло не так. Перезагрузи программу");			
-		} else {			
-			int i;			
-			for (i = 0; day > month[i]; i++) {				
+		} else {						
+			for (int i = 0; day > month[i]; i++) {				
 				day = day - month[i];				
 			}		
 			switch (i) {		
