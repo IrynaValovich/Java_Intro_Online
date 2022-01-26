@@ -11,12 +11,12 @@ public class Task36 {
 		int number2 = number / 10; // получаю 138		
 		double digit2 = number2 % 10; // вычленяю 8		
 		int number3 = number2 / 10; // получаю 13                
-        double digit3 = number3 % 10; // вычленяю 3         
-        double digit4 = number3 / 10; // вычленяю 1
-        
-        double multEven = digit2 * digit4;
-        double multOdd = digit1 * digit3;
-        double result = multEven / multOdd;        
+		double digit3 = number3 % 10; // вычленяю 3         
+		double digit4 = number3 / 10; // вычленяю 1
+
+		double multEven = digit2 * digit4;
+		double multOdd = digit1 * digit3;
+		double result = multEven / multOdd;        
         
 		System.out.println("Произведение четных цифр числа = " + multEven);
 		System.out.println("Произведение нечетных цифр числа = " + multOdd);
