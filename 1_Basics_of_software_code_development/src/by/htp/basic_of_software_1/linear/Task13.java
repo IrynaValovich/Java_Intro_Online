@@ -26,6 +26,6 @@ public class Task13 {
 		s = Math.sqrt(p1 * (p1 - da) * (p1 - db) * (p1 - dc));
 		
 		System.out.println("Периметр треугольника p = " + p);
-        System.out.println("Площадь треугольника s = " + s);
+        	System.out.println("Площадь треугольника s = " + s);
 	}	
 }
