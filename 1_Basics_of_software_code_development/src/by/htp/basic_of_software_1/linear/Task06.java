@@ -13,8 +13,8 @@ public class Task06 {
 		@SuppressWarnings("resource")
 		Scanner in = new Scanner(System.in);		
 		System.out.print("Введите значение для a >> ");               
-        a = in.nextDouble();        
-        c = 3 + a;        
-        System.out.println("При а = " + a + " значение функции с = " + c);        
+		a = in.nextDouble();        
+		c = 3 + a;        
+		System.out.println("При а = " + a + " значение функции с = " + c);        
 	}
 }
