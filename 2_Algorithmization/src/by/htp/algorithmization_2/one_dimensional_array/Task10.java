@@ -27,10 +27,10 @@ public class Task10 {
 	
 	public static void squeezeArray(int[] array) {
 		for (int i = 0; i < array.length; i++) {
-            if(i % 2 == 1){
-                array[i] = 0;
-            }
-            System.out.print("[" + array[i] + "]");
-        }
+		    if(i % 2 == 1){
+			array[i] = 0;
+		    }
+            	System.out.print("[" + array[i] + "]");
+        	}
 	}
 }
