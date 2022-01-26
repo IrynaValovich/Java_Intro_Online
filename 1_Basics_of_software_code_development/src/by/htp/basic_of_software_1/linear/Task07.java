@@ -12,13 +12,13 @@ public class Task07 {
 		int n = 10;
 		int m = 6;
 		
-        double milknBidon;
-        double mdifonebidon;        
-        milknBidon = 80; // Литров молока в малых бидонах        
-        mdifonebidon = 12.0; //Разница между объемом молока в большом и малом бидоне
+		double milknBidon;
+		double mdifonebidon;        
+		milknBidon = 80; // Литров молока в малых бидонах        
+		mdifonebidon = 12.0; //Разница между объемом молока в большом и малом бидоне
 
-        double mSum;        
-        mSum = m * (milknBidon / n + mdifonebidon);        
-        System.out.println("Если малых бидонов " + n + ", и больших " + m + ", то в больших бидонах " + mSum + " литров молока");
+		double mSum;        
+		mSum = m * (milknBidon / n + mdifonebidon);        
+		System.out.println("Если малых бидонов " + n + ", и больших " + m + ", то в больших бидонах " + mSum + " литров молока");
 	}	
 }
