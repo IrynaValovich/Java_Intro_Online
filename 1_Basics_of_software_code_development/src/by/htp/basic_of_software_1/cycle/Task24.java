@@ -29,21 +29,21 @@ public class Task24 {
 			
 			// Нахожу сумму четных цифр числа		
 			int sum = 0;		
-		    while (testNumber > 0) {	    	
-		        if ((testNumber % 10) % 2 == 0) { 	        	
-		        	sum = sum + testNumber % 10; 	        	
-		        }	        
+			while (testNumber > 0) {	    	
+				if ((testNumber % 10) % 2 == 0) { 	        	
+					sum = sum + testNumber % 10; 	        	
+				}	        
 		        testNumber = testNumber / 10; 		        
-		    }	
-		    System.out.println("Сумма четных цифр числа " + number + " = " + sum);
+		    	}	
+		    	System.out.println("Сумма четных цифр числа " + number + " = " + sum);
 		    
-		    // Переворачиваю число так, чтобы его цифры шли в обратном порядке
+		    	// Переворачиваю число так, чтобы его цифры шли в обратном порядке
 		    
-		    int reverseOrder = 0;
-		    while (number != 0) {
-		    	reverseOrder = reverseOrder * 10 + number % 10;
-		    	number = number / 10;
-		    }		   			
+		   	int reverseOrder = 0;
+		    	while (number != 0) {
+		    		reverseOrder = reverseOrder * 10 + number % 10;
+		    		number = number / 10;
+		    	}		   			
 			System.out.println("Преобразованное число: " + reverseOrder);			
 		}		
 	}	
