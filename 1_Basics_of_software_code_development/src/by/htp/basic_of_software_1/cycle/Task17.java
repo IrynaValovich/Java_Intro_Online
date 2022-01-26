@@ -7,10 +7,10 @@ public class Task17 {
 	public static void main(String[] args) {		
 		double a = 1.5;
 		int n = 10;	       
-        double mult = 1;
-        for (int i = 0; i < n; i++) {        	
-            mult = mult * (a + i);            
-        }        
-        System.out.println("Произведение равно " + mult);        
+		double mult = 1;
+		for (int i = 0; i < n; i++) {        	
+		    mult = mult * (a + i);            
+		}        
+		System.out.println("Произведение равно " + mult);        
 	}
 }
