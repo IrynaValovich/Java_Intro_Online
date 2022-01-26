@@ -6,13 +6,12 @@ public class Task14 {
 	
 	// Даны 2 угла треугольника в градусах. Определить, есть ли такой треугольник и прямоугольный ли он
 
-	public static void main(String[] args) {
-		
-		int alpha;
-		int beta;		
+	public static void main(String[] args) {				
 		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Введи два угла треугольника (в градусах) через Enter >> ");
+		int alpha;
+		int beta;
 		alpha = scan.nextInt();
 		beta = scan.nextInt();	
 		
