@@ -20,11 +20,11 @@ public class Task16 {
 		double digit3;
 		double digit4;    
                 
-        digit3 = n3 % 10; // вычленяю вторую единицу (1)         
-        digit4 = n3 / 10; // вычленяю цифру 2        
-        
-        int result;
-        result = (int) (digit1 * digit2 * digit3 * digit4);       
-        System.out.println("Произведение цифр числа " + n + " равняется " + result);              
+		digit3 = n3 % 10; // вычленяю вторую единицу (1)         
+		digit4 = n3 / 10; // вычленяю цифру 2        
+
+		int result;
+		result = (int) (digit1 * digit2 * digit3 * digit4);       
+		System.out.println("Произведение цифр числа " + n + " равняется " + result);              
 	}	
 }
