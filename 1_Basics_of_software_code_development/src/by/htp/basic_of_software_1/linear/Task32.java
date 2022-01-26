@@ -11,15 +11,15 @@ public class Task32 {
 
 	public static void main(String[] args) {		
 		int m = 19;
-        int n = 20;
-        int k = 40;      
+		int n = 20;
+		int k = 40;      
         
 		System.out.println("Текущее показание электронных часов: " + m + " ч. " + n + " мин. " + k + " c.");
 		System.out.println("Какое время будут показывать часы через р ч q мин r с?");
 		
 		int p;
-        int q;
-        int r;
+		int q;
+		int r;
 		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Введи значение p >> ");
