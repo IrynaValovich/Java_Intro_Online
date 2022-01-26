@@ -14,13 +14,13 @@ public class Task21 {
 		String answer;		
 		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);		
-        System.out.print("Кто ты: мальчик или девочка? Введи Д или М >> ");        
-        answer = scan.next();
-        
-        switch (answer) {        
-            case "Д"-> System.out.println("Мне нравятся девочки!");            
-            case "М"-> System.out.println("Мне нравятся мальчики!");            
-            default -> System.out.println("Неверное значение!");            
-        }        
+		System.out.print("Кто ты: мальчик или девочка? Введи Д или М >> ");        
+		answer = scan.next();
+
+		switch (answer) {        
+		    case "Д"-> System.out.println("Мне нравятся девочки!");            
+		    case "М"-> System.out.println("Мне нравятся мальчики!");            
+		    default -> System.out.println("Неверное значение!");            
+		}        
 	}        
 }
