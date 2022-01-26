@@ -27,11 +27,11 @@ public class Task08 {
 		System.out.println("\nНовый массив: ");				
 		int[] newA = new int[a.length - counterMin];
 		int iArr = 0;
-        for (int x : a) {
-            if (x != minElement) {
-                newA[iArr++] = x;
-                System.out.print("[" + x + "] ");
-            }
-        }
+		for (int x : a) {
+		    if (x != minElement) {
+			newA[iArr++] = x;
+			System.out.print("[" + x + "] ");
+		    }
+		}
 	}
 }
