@@ -8,7 +8,7 @@ public class Task03 {
 		double[] array = new double[] {0.9, 0, 2.8, -5.1, -3.2, 2.7, 1.4, 7.5, 9.5, 11.3};		
 		for (int i = 0; i < array.length; i++) {	        
 	        System.out.println(array[i]);
-	    }		
+	    	}		
 		int negativeCounter = 0;
 		int positiveCounter = 0;
 		int zeroCounter = 0;
