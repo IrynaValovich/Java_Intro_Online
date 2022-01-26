@@ -7,5 +7,10 @@
 
 <a href="https://github.com/IrynaValovich/Java_Intro_Online/tree/master/1_Basics_of_software_code_development/src/by/htp/basic_of_software_1/cycle">Cycle</a> - содержит решения 37 задач из блока Циклы
 
-<a href="https://github.com/IrynaValovich/Java_Intro_Online/blob/master/1_Basics_of_software_code_development/src/by/htp/basic_of_software_1/Questions.pdf</a> - теоретические вопросы 1-ого модуля
+<a href="https://github.com/IrynaValovich/Java_Intro_Online/blob/master/1_Basics_of_software_code_development/src/by/htp/basic_of_software_1/Questions.pdf">Questions.pdf</a> - теоретические вопросы 1-ого модуля
+         
+         
+         
+         
+         
 
