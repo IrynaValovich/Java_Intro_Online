@@ -25,7 +25,9 @@ public class Task31 {
 		System.out.print("Введите время движения против течения реки (t2) ч) >> ");		
 		t2 = scan.nextDouble();
 		
-		double dist, vResult, sLength;		
+		double dist;
+		double vResult;
+		double sLength;		
 		dist = v * t1; // расстояние, пройденное лодкой по озеру		
 		vResult = v - v1; //скорость против течения			
 		sLength = dist + vResult * t2;		
