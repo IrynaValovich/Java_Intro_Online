@@ -20,16 +20,16 @@ public class Task20 {
 		System.out.println("Введи число k >> ");
 		k = scan.nextInt();	
         
-        if (a % k == 0) {        	
-            System.out.println("Число " + k + " является делителем числа " + a);            
-        }
-        
-        if (b % k == 0) {        	
-            System.out.println("Число " + k + " является делителем числа " + b);            
-        }
-        
-        if (c % k == 0) {        	
-            System.out.println("Число " + k + " является делителем числа " + c);            
-        }
+		if (a % k == 0) {        	
+		    System.out.println("Число " + k + " является делителем числа " + a);            
+		}
+
+		if (b % k == 0) {        	
+		    System.out.println("Число " + k + " является делителем числа " + b);            
+		}
+
+		if (c % k == 0) {        	
+		    System.out.println("Число " + k + " является делителем числа " + c);            
+		}
 	}	
 }
