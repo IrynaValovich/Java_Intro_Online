@@ -16,10 +16,10 @@ public class Task09 {
 		};
 		
 		int[] summa = sumColumn(matrix);
-	    for(int i = 0; i < summa.length; i++){
-	        System.out.println("Сумма элементов столбца " + (i+1) + " = " + summa[i]);
-	    }	    
-	    findMaxSum(summa);
+	    	for(int i = 0; i < summa.length; i++) {
+	        	System.out.println("Сумма элементов столбца " + (i+1) + " = " + summa[i]);
+	    	}	    
+	    	findMaxSum(summa);
 	}
 	
 	public static int[] sumColumn(int[][] matrix) {		
@@ -36,12 +36,12 @@ public class Task09 {
 	public static void findMaxSum(int[] sumMas) {		
 		int i;		
 		int max = 0;
-        for (i = 0; i < sumMas.length; i++) {
-            if (sumMas[i] > max) {
-            	max = sumMas[i];
-            }            
-        }
-        System.out.print("Столбец " + i + " содержит максимальную сумму " + max);
-        System.out.println();        
+		for (i = 0; i < sumMas.length; i++) {
+		    	if (sumMas[i] > max) {
+				max = sumMas[i];
+		    	}            
+		}
+		System.out.print("Столбец " + i + " содержит максимальную сумму " + max);
+		System.out.println();        
 	}	
 }
