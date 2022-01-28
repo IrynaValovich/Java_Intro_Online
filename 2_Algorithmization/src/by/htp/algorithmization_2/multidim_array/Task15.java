@@ -30,26 +30,26 @@ public class Task15 {
 	}
 	
 	public static int getMaxVal(int[][] matrix) {		
-        int max = matrix[0][0];
-        for (int i = 0; i < matrix.length; i++) { 
-            for(int j = 0; j < matrix[i].length; j++) {
-                if (max < matrix[i][j]){
-                    max = matrix[i][j];
-                } 
-            } 
-        }
-        return max;
-    }
+		int max = matrix[0][0];
+		for (int i = 0; i < matrix.length; i++) { 
+		    for(int j = 0; j < matrix[i].length; j++) {
+			if (max < matrix[i][j]){
+			    max = matrix[i][j];
+			} 
+		    } 
+		}
+		return max;
+    	}
 	
 	public static void changeMaxVal(int[][] matrix, int max) {        
-        for (int i = 0; i < matrix.length; i++) { 
-            for(int j = 0; j < matrix[i].length; j++) {
-                if (matrix[i][j] % 2 != 0) {
-                    matrix[i][j] = max;
-                }
-                System.out.print("[" + matrix[i][j] + "] "); 
-            }
-            System.out.println(); 
-        }       
-    }
+		for (int i = 0; i < matrix.length; i++) { 
+		    for(int j = 0; j < matrix[i].length; j++) {
+			if (matrix[i][j] % 2 != 0) {
+			    matrix[i][j] = max;
+			}
+			System.out.print("[" + matrix[i][j] + "] "); 
+		    }
+		    System.out.println(); 
+		}       
+	}
 }
