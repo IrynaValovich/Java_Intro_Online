@@ -45,7 +45,7 @@ public class Task03 {
 		p = enterFromConsole("Введите порядковый номер столбца >> ");		
 		for (i = 0; i < matrix.length; i++) {
 			System.out.println(matrix[i][p-1] + " ");
-			}
+		}
 		System.out.println();	    
 	}	
 	
