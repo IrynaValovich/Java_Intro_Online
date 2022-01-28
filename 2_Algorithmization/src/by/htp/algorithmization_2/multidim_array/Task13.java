@@ -11,16 +11,16 @@ public class Task13 {
 		int column = 4;		
 		int[][] matrix = createMatrix(str, column);
 		
-	    System.out.println("Дана матрица: ");	    
-	    printMatrix(matrix);	    
-	    
-	    System.out.println("Столбцы по возрастанию: ");
-	    sortAscending(matrix, str, column);
-	    printMatrix(matrix);
-	    
-	    System.out.println("Столбцы по убыванию: ");
-	    sortDescending(matrix, str, column);
-	    printMatrix(matrix);	    
+		System.out.println("Дана матрица: ");	    
+		printMatrix(matrix);	    
+
+		System.out.println("Столбцы по возрастанию: ");
+		sortAscending(matrix, str, column);
+		printMatrix(matrix);
+
+		System.out.println("Столбцы по убыванию: ");
+		sortDescending(matrix, str, column);
+		printMatrix(matrix);	    
 	}
 	
 	public static void sortDescending(int[][] matrix, int str, int column) {
