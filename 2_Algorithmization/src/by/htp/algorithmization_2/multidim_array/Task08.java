@@ -17,8 +17,8 @@ public class Task08 {
 		int column1;
 		column1 = enterFromConsole("Введите номер столбца для замены >> ") - 1;
 		
-	    int column2;
-	    column2 = enterFromConsole("Введите номер столбца для замены >> ") - 1;
+		int column2;
+		column2 = enterFromConsole("Введите номер столбца для замены >> ") - 1;
 			
 		swapMatrix(matrix, str, column1, column2);
 		
@@ -40,21 +40,21 @@ public class Task08 {
 	}	
 	
 	public static void swapMatrix(int[][] originalMatrix, int str, int col1, int col2) {
-	    for (int i = 0; i < str; i++) {
-		      int temp = originalMatrix[i][col1];
-		      originalMatrix[i][col1] = originalMatrix[i][col2];
-		      originalMatrix[i][col2] = temp;
-		    }	
+	    	for (int i = 0; i < str; i++) {
+		      	int temp = originalMatrix[i][col1];
+		      	originalMatrix[i][col1] = originalMatrix[i][col2];
+		      	originalMatrix[i][col2] = temp;
+		}	
 	}	
 	
 	public static void printChangedMatrix(int[][] originalMatrix, int str, int column) {		
 		int[][] newMatrix = originalMatrix.clone();		
 		for (int i = 0; i < str; i++) {
-		      for (int j = 0; j < column; j++) {
+		      	for (int j = 0; j < column; j++) {
 		        System.out.print(newMatrix[i][j]+" "); 
-		      }
-		      System.out.println();
-		  }		
+			}
+			System.out.println();
+		}		
 	}
 	
 	public static int enterFromConsole(String message) {		
