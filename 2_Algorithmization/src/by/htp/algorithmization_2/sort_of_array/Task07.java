@@ -22,11 +22,11 @@ public class Task07 {
 	private static void printInsertPosition(double [] array1, double [] array2) {		
 		for (int i = 0, j = 0; i < array1.length && j < array2.length; i++, j++) {
 			if (array2[j] < array1[i]) {
-        		System.out.print("\nзначение " + array2[j] + " расположится перед " + i + "-ой ячейкой в первом массиве");
-        	} else if (array2[j] > array1[i]) {
-        		System.out.print("\nзначение " + array2[j] + " расположится после " + i + "-ой ячейки в первом массиве"); 
-        	}            
+        			System.out.print("\nзначение " + array2[j] + " расположится перед " + i + "-ой ячейкой в первом массиве");
+        		} else if (array2[j] > array1[i]) {
+        			System.out.print("\nзначение " + array2[j] + " расположится после " + i + "-ой ячейки в первом массиве"); 
+        		}            
 		}		
-		 System.out.println();    
+		System.out.println();    
 	}
 }
