@@ -38,38 +38,36 @@ public class Task08 {
 		return nok;
 	}
 
-    public static int[] sort(int[] arrayToSort) {    	
-        for (int i = 0; i < arrayToSort.length - 1; i++) {
-            int max_index = i;
-
-            for (int j = i + 1; j < arrayToSort.length; j++) {
-                if (arrayToSort[j] < arrayToSort[max_index]) {
-                    max_index = j;
-                }
-
-                if (max_index != i) {
-                    swapElementsOfArray(arrayToSort, i, max_index);
-                }
-            }
-        }
-        return arrayToSort;
-    }
+	public static int[] sort(int[] arrayToSort) {		
+		for (int i = 0; i < arrayToSort.length - 1; i++) {
+			int max_index = i;
+			for (int j = i + 1; j < arrayToSort.length; j++) {
+				if (arrayToSort[j] < arrayToSort[max_index]) {
+					max_index = j;
+				}
+				if (max_index != i) {
+					swapElementsOfArray(arrayToSort, i, max_index);
+				}
+		    	}
+		}
+		return arrayToSort;
+	}
     
-    public static void swapElementsOfArray(int[] array, int index, int maxIndex) {
-    	int temp = array[index];
-    	array[index] = array[maxIndex];
-    	array[maxIndex] = temp;    	
-    }
-    
-    public static void result(int[] p, int[] q) {    	
-        int nok = nok(q);
-        for (int i = 0; i < p.length; i++) {
-            p[i] = nok / q[i] * p[i];
-        }
-        sort(p);
-        for (int i = 0; i < p.length; i++) {
-            System.out.print(p[i] + "/" + nok + "\r");
-        }
-        System.out.println();
-    }	
+	public static void swapElementsOfArray(int[] array, int index, int maxIndex) {
+		int temp = array[index];
+		array[index] = array[maxIndex];
+		array[maxIndex] = temp;    	
+	}
+
+	public static void result(int[] p, int[] q) {    	
+		int nok = nok(q);
+		for (int i = 0; i < p.length; i++) {
+		    p[i] = nok / q[i] * p[i];
+		}
+		sort(p);
+		for (int i = 0; i < p.length; i++) {
+		    System.out.print(p[i] + "/" + nok + "\r");
+		}
+		System.out.println();
+	}	
 }
