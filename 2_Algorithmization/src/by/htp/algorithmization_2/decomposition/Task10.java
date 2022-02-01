@@ -12,18 +12,18 @@ public class Task10 {
 		printArray(number);		
 	}	
 	
-	private static int[] getDigits(int number) {	    
+	private static int[] getDigits(int number) {		
 		int count;	    
-	    count = Integer.toString(number).length();
-	    if (number < 0) { 
-	        count--;
-	    }
-	    int[] result = new int[count];
-	    while (count-- > 0) {
-	        result[count] = number % 10;
-	        number /= 10;
-	    }	    
-	    return result;
+		count = Integer.toString(number).length();
+		if (number < 0) {			
+			count--;
+		}
+		int[] result = new int[count];
+		while (count-- > 0) {
+			result[count] = number % 10;
+			number /= 10;
+		}	    
+		return result;
 	}
 	
 	private static void printArray(int number) {
