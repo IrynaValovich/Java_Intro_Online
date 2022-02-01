@@ -41,40 +41,40 @@ public class Task17 {
 	}
 	
 	private static int findNumberLength(int number) {		
-        int numberLength = 0;
-        while (number != 0) {
-            numberLength++;
-            number /= 10;
-        }
-        return numberLength;
-    }
+		int numberLength = 0;
+		while (number != 0) {
+		    numberLength++;
+		    number /= 10;
+		}
+		return numberLength;
+    	}
 	
 	private static int[] getDigits(int number) {		
-        int size = findNumberLength(number);
-        int[] digits = new int[size];
-        for (int i = 1; i <= size; i++) {
-            int digit = (int) (number / Math.pow(10, i - 1)) % 10;
-            digits[size - i] = digit;
-        }
-        return digits;		
+		int size = findNumberLength(number);
+		int[] digits = new int[size];
+		for (int i = 1; i <= size; i++) {
+		    int digit = (int) (number / Math.pow(10, i - 1)) % 10;
+		    digits[size - i] = digit;
+		}
+		return digits;		
 	}
 	
 	private static int findSum(int number) {		
-        int sum = 0;
-        int[] digits = getDigits(number);
-        for (int i = 0; i < digits.length; i++) {
-            sum = sum + digits[i];
-        }
-        return sum;
-    }    
+		int sum = 0;
+		int[] digits = getDigits(number);
+		for (int i = 0; i < digits.length; i++) {
+		    sum = sum + digits[i];
+		}
+		return sum;
+    	}    
 	
 	private static int counter(int number) {		
-        int counter = 0;
-        while (number > 0) {
-            int sum = findSum(number);
-            number = number - sum;
-            counter++;
-        }
-        return counter;
-    }	
+		int counter = 0;
+		while (number > 0) {
+		    int sum = findSum(number);
+		    number = number - sum;
+		    counter++;
+		}
+		return counter;
+    	}	
 }
