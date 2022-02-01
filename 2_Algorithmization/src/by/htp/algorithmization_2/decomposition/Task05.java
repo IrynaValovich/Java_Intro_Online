@@ -16,9 +16,9 @@ public class Task05 {
 		n = getAmountNumbersFromUser("Введи количество чисел, которое ты хочешь поместить в массив >> ");
 		
 		int array[] = new int[n];		
-		for (int i = 0; i < array.length; i++){
-	        array[i] = enterFromConsole("Введи целое число >> ");		        	
-	    }		
+		for (int i = 0; i < array.length; i++) {
+	        	array[i] = enterFromConsole("Введи целое число >> ");		        	
+	    	}		
 		System.out.println("Второе по величине число в массиве = " + getSecondMax(array));
 	}
 	
