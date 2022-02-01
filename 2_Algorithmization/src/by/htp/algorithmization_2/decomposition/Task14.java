@@ -55,7 +55,7 @@ public class Task14 {
 			}
 			if (sum == i) {
 				System.out.print(i + " ");
-		    }		
+		    	}		
 		}
 		System.out.println();		
 	}
