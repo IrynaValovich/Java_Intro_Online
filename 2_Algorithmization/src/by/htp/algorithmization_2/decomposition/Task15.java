@@ -39,20 +39,20 @@ public class Task15 {
 	
 	private static void findNumbers(int n) {		
 		int temp = n - 1;
-        int val = (int) Math.pow(10, temp);
-        for (int i = val; i < val * 10; i++) {        	
-            int counter = 0;
-            for (int j = 0; j < n; j++) {
-                int rightDigit = (int) (i / Math.pow(10, j - 1)) % 10;
-                int leftDigit = (int) (i / Math.pow(10, j)) % 10;
-                if (leftDigit < rightDigit) {
-                    counter++;
-                }
-                if (counter == temp) {
-                    System.out.print(i + " ");
-                }                
-            }            
-        }
-        System.out.println();
-    }
+        	int val = (int) Math.pow(10, temp);
+        	for (int i = val; i < val * 10; i++) {        	
+            		int counter = 0;
+            		for (int j = 0; j < n; j++) {
+                		int rightDigit = (int) (i / Math.pow(10, j - 1)) % 10;
+                		int leftDigit = (int) (i / Math.pow(10, j)) % 10;
+                		if (leftDigit < rightDigit) {
+                    		counter++;
+                		}
+                		if (counter == temp) {
+                    		System.out.print(i + " ");
+                		}                
+            		}            
+        	}
+        	System.out.println();
+    	}
 }
