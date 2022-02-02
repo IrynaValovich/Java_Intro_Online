@@ -9,16 +9,19 @@ public class Task05DeleteExtraSpaces {
 
 	public static void main(String[] args) {
 		String value = " This is a      test  string ";
+		
+		long start = System.nanoTime();
 		String result = deleteExtraSpaces(value);
+		long stop = System.nanoTime();
+		
 		System.out.println("Исходная строка: \n" + value);
 		System.out.println("Результирующая строка: \n" + result);
-
+		System.out.println("Время выполнения алгоритма: " + (stop-start));
 	}
 	
 	private static String deleteExtraSpaces(String stringToDelete) {
 		char last = stringToDelete.charAt(0);
-		StringBuilder result = new StringBuilder();
-		
+		StringBuilder result = new StringBuilder();		
 		for (int charIndex = 0; charIndex < stringToDelete.length(); charIndex++) {
 			char symbol = stringToDelete.charAt(charIndex);
 			if (symbol != ' ' || last != ' ') {
