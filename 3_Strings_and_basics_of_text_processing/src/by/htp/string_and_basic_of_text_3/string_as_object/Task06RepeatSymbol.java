@@ -22,7 +22,7 @@ public class Task06RepeatSymbol {
 	}
 	
 	private static String doubleRepeatEachCharString(String stringToRepeat) {		
-		StringBuilder result = new StringBuilder(stringToRepeat.length() * 2);
+		StringBuilder result = new StringBuilder(stringToRepeat.length() * 3);
 		for (int charIndex = 0; charIndex < stringToRepeat.length(); charIndex++) {
 			result.append(stringToRepeat.charAt(charIndex))
 				  .append(stringToRepeat.charAt(charIndex))
