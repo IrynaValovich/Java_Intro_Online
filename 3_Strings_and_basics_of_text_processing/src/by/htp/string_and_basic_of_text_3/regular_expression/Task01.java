@@ -137,17 +137,17 @@ public class Task01 {
 	}
 	
 	private static void alphabetSort(String[] arrayToSort) {
-    	int counter = 0;
-    	for (int i = 0; i < arrayToSort.length - 1; i++) {
-    		if (arrayToSort[i + 1].toLowerCase().compareTo(arrayToSort[i].toLowerCase()) < 0) {
-    			String temp = arrayToSort[i];
-    			arrayToSort[i] = arrayToSort[i + 1];
-    			arrayToSort[i + 1] = temp;
-    		}
-    	}    	
-    	if (counter > 0) {
-    		alphabetSort(arrayToSort);
-    	}
+		int counter = 0;
+		for (int i = 0; i < arrayToSort.length - 1; i++) {
+			if (arrayToSort[i + 1].toLowerCase().compareTo(arrayToSort[i].toLowerCase()) < 0) {
+				String temp = arrayToSort[i];
+				arrayToSort[i] = arrayToSort[i + 1];
+				arrayToSort[i + 1] = temp;
+			}
+		}    	
+		if (counter > 0) {
+			alphabetSort(arrayToSort);
+		}
     }
 	
 	private static void swapElements(String[] base, int index1, int index2) {
