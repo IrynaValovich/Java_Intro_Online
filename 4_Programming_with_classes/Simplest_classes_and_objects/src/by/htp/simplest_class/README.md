@@ -1,4 +1,4 @@
-# 4 Simplest classes and objects 
+# Simplest classes and objects 
 Задачи:
 
 <a href="https://github.com/IrynaValovich/Java_Intro_Online/tree/master/4_Programming_with_classes/Simplest_classes_and_objects/src/by/htp/simplest_class/task01">task01.</a> Создайте класс Test1 двумя переменными. Добавьте метод вывода на экран и методы изменения этих переменных. Добавьте метод, который находит сумму значений этих переменных, и метод, который находит наибольшее значение из этих двух переменных.
