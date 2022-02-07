@@ -1,4 +1,6 @@
-package by.htp.simplest_class.task01;
+package by.htp.sc_task01.main;
+
+import by.htp.sc_task01.test1.Test1;
 
 public class DemoTest1 {
 	

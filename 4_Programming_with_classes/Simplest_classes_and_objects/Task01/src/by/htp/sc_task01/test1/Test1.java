@@ -1,4 +1,4 @@
-package by.htp.simplest_class.task01;
+package by.htp.sc_task01.test1;
 
 public class Test1 {
 	
