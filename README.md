@@ -26,3 +26,8 @@
 <a href="https://github.com/IrynaValovich/Java_Intro_Online/tree/master/3_Strings_and_basics_of_text_processing/src/by/htp/string_and_basic_of_text_3/string_as_object">String_as_object</a> - содержит решения 10 задач из блока Работа со строкой как с объектом типа String или StringBuilder.
 
 <a href="https://github.com/IrynaValovich/Java_Intro_Online/tree/master/3_Strings_and_basics_of_text_processing/src/by/htp/string_and_basic_of_text_3/regular_expression">Regular_expression</a> - содержит решения 2 задач из блока Регулярные выражения.
+
+# 4 Programming with classes
+Решения задач четвертого модуля:
+
+<a href="https://github.com/IrynaValovich/Java_Intro_Online/tree/master/4_Programming_with_classes/Simplest_classes_and_objects/src/by/htp">Simplest_classes_and_objects</a> - содержит решения 10 задач из блока Простые классы и объекты.
