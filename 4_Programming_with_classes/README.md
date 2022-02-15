@@ -1,16 +1,6 @@
-# 1 Basics of software code development 
-Решения задач первого модуля:
+# 4 Programming with classes 
+Решения задач четвертого модуля:
 
-<a href="https://github.com/IrynaValovich/Java_Intro_Online/tree/master/1_Basics_of_software_code_development/src/by/htp/basic_of_software_1/linear">Linear</a> - содержит решения 40 задач из блока Линейные программы.
+<a href="https://github.com/IrynaValovich/Java_Intro_Online/tree/master/4_Programming_with_classes/Aggregation_and_composition/src/by/htp">/Aggregation_and_composition</a> - содержит решения 5 задач из блока Агрегация и композиция.
 
-<a href="https://github.com/IrynaValovich/Java_Intro_Online/tree/master/1_Basics_of_software_code_development/src/by/htp/basic_of_software_1/branch_task">Branch_task</a> - содержит решения 40 задач из блока Ветвления
-
-<a href="https://github.com/IrynaValovich/Java_Intro_Online/tree/master/1_Basics_of_software_code_development/src/by/htp/basic_of_software_1/cycle">Cycle</a> - содержит решения 37 задач из блока Циклы
-
-<a href="https://github.com/IrynaValovich/Java_Intro_Online/blob/master/1_Basics_of_software_code_development/src/by/htp/basic_of_software_1/Questions.pdf">Questions.pdf</a> - теоретические вопросы 1-ого модуля
-         
-         
-         
-         
-         
-
+<a href="https://github.com/IrynaValovich/Java_Intro_Online/tree/master/4_Programming_with_classes/Simplest_classes_and_objects/src/by/htp">Simplest_classes_and_objects</a> - содержит решения 10 задач из блока Простые классы и объекты.
