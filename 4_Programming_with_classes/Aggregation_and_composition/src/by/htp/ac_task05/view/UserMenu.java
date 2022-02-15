@@ -62,7 +62,9 @@ public class UserMenu {
 			case 3:
 				mainMenu(agency);
 				break;
-			default: System.out.println("Такого пункта в меню нет");				
+			default: 
+				System.out.println("Такого пункта в меню нет");	
+				mainMenu(agency);
 		}		
 	}	
 }
