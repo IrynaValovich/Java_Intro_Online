@@ -99,7 +99,7 @@ public final class Date {
 	        int m = month + 12 * ((14 - month) / 12) - 2;
 	        int d = (day + x + (31*m)/12) % 7;
 	        return d;
-	    }
+	    	}
 		
 		public String initDayName() {
 			String result = "";
