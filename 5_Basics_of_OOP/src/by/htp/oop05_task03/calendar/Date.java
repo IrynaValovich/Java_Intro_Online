@@ -101,14 +101,14 @@ public final class Date {
 		
 		private int getDayIndex() {
 			int monthDif = 2;
-	        int y = year - (ConstantValue.CALENDAR_VAR.getValue() - month) / ConstantValue.MAX_MONTH.getValue();
-	        int x = y + y / ConstantValue.LEAP_SHORT_CYCLE.getValue() - y / ConstantValue.NOT_LEAP.getValue() 
-	        		+ y / ConstantValue.LEAP_BIG_CYCLE.getValue();
-	        int m = month + ConstantValue.MAX_MONTH.getValue() * ((ConstantValue.CALENDAR_VAR.getValue() - month) 
-	        		/ ConstantValue.MAX_MONTH.getValue()) - monthDif;
-	        int d = (day + x + (ConstantValue.MONTH_31.getValue()*m) / ConstantValue.MAX_MONTH.getValue()) % dayNames.length;
-	        return d;
-	    }
+			int y = year - (ConstantValue.CALENDAR_VAR.getValue() - month) / ConstantValue.MAX_MONTH.getValue();
+			int x = y + y / ConstantValue.LEAP_SHORT_CYCLE.getValue() - y / ConstantValue.NOT_LEAP.getValue() 
+					+ y / ConstantValue.LEAP_BIG_CYCLE.getValue();
+			int m = month + ConstantValue.MAX_MONTH.getValue() * ((ConstantValue.CALENDAR_VAR.getValue() - month) 
+					/ ConstantValue.MAX_MONTH.getValue()) - monthDif;
+			int d = (day + x + (ConstantValue.MONTH_31.getValue()*m) / ConstantValue.MAX_MONTH.getValue()) % dayNames.length;
+			return d;
+		}
 		
 		public String initDayName() {
 			String result = "";
