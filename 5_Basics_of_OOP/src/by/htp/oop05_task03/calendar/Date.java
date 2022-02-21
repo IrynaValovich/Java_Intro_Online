@@ -4,6 +4,9 @@ import java.util.Objects;
 
 public final class Date {
 	
+	public final static int SHORT_FEBRUARY = 28;
+	public final static int LEAP_FEBRUARY = 29;
+	
 	private int day;
 	private int month;
 	private int year;
@@ -21,11 +24,13 @@ public final class Date {
 	private final int initMaxDaysInMonths(int year, int month) {		
 		switch(month) {
 		case 1, 3, 5, 7, 8, 10, 12:
-			return 31;
+			return ConstantValue.MONTH_31.getValue();
 		case 4, 6, 9, 11:
-			return 30;
+			return ConstantValue.MONTH_30.getValue();
 		default:
-			return (year % 4 != 0 || (year % 100 == 0 && year % 400 != 0)) ? 28 : 29;						
+			return (year % ConstantValue.LEAP_SHORT_CYCLE.getValue() != 0 ||
+			(year % ConstantValue.NOT_LEAP.getValue() == 0 && year % ConstantValue.LEAP_BIG_CYCLE.getValue() != 0)) ? 
+					SHORT_FEBRUARY : LEAP_FEBRUARY;						
 		}
 	}
 	
@@ -38,6 +43,7 @@ public final class Date {
 				(week.initDayName() == week.getDayNames()[6])) ? true : false; 				
 	}
 	
+	// проверка даты на уже существующий праздник в Беларуси	
 	private final boolean initHoliday() {
 		return ((day == 1 || day == 2 || day == 7) && month == 1) || (day == 8 && month == 3) || 
 				((day == 1 || day == 9) && month == 5) || (day == 3 && month == 7) || (day == 7 &&
@@ -69,10 +75,10 @@ public final class Date {
 	}
 	
 	private void setCorrectDate(int day, int month, int year) {	
-		if (month <= ConstantValue.MAX_MONTH.getValue() && month >= ConstantValue.MIN_MONTH.getValue()) {
+		if (month <= ConstantValue.MAX_MONTH.getValue() && month >= ConstantValue.MIN.getValue()) {
 			this.month = month;			
 		}
-		if (day >= ConstantValue.MIN_DAY.getValue() && day <= initMaxDaysInMonths(year, this.month)) {
+		if (day >= ConstantValue.MIN.getValue() && day <= initMaxDaysInMonths(year, this.month)) {
 			this.day = day;
 		}
 		this.year = year;
@@ -93,13 +99,16 @@ public final class Date {
 		
 		public WeekInit() {}
 		
-		private int getDayIndex() {			
-	        int y = year - (14 - month) / 12;
-	        int x = y + y/4 - y/100 + y/400;
-	        int m = month + 12 * ((14 - month) / 12) - 2;
-	        int d = (day + x + (31*m)/12) % 7;
+		private int getDayIndex() {
+			int monthDif = 2;
+	        int y = year - (ConstantValue.CALENDAR_VAR.getValue() - month) / ConstantValue.MAX_MONTH.getValue();
+	        int x = y + y / ConstantValue.LEAP_SHORT_CYCLE.getValue() - y / ConstantValue.NOT_LEAP.getValue() 
+	        		+ y / ConstantValue.LEAP_BIG_CYCLE.getValue();
+	        int m = month + ConstantValue.MAX_MONTH.getValue() * ((ConstantValue.CALENDAR_VAR.getValue() - month) 
+	        		/ ConstantValue.MAX_MONTH.getValue()) - monthDif;
+	        int d = (day + x + (ConstantValue.MONTH_31.getValue()*m) / ConstantValue.MAX_MONTH.getValue()) % dayNames.length;
 	        return d;
-	    	}
+	    }
 		
 		public String initDayName() {
 			String result = "";
@@ -119,22 +128,7 @@ public final class Date {
 		public String toString() {
 			return "dayNames: " + getDayNames() + ", initDayName(): " + initDayName();
 		}			
-	}
-	
-	public enum ConstantValue {
-		
-		MIN_MONTH(1), MAX_MONTH(12), MIN_DAY(1);
-		
-		private int value;
-		
-		private ConstantValue(int value) {
-			this.value = value;
-		}
-		
-		public int getValue() {
-			return value;
-		}		
-	}
+	}	
 
 	@Override
 	public int hashCode() {
