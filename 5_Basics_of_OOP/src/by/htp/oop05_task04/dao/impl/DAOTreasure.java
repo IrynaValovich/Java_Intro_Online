@@ -29,7 +29,7 @@ public class DAOTreasure implements DAOResource<Treasure> {
 		} catch(FileNotFoundException e) {
 			System.err.println("Файл не найден");									
 		} catch(IOException e) {			
-			System.err.println("Ошибка открытия потока");
+			System.err.println("Общее исключение IO");
 		} finally {
 			if (reader != null) {
 				try {
