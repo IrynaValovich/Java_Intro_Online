@@ -27,15 +27,15 @@ public class DAOTreasure implements DAOResource<Treasure> {
 			}
 			
 		} catch(FileNotFoundException e) {
-			System.err.println("Р¤Р°Р№Р» РЅРµ РЅР°Р№РґРµРЅ");									
+			System.err.println("Файл не найден");									
 		} catch(IOException e) {			
-			System.err.println("РћС€РёР±РєР° РѕС‚РєСЂС‹С‚РёСЏ РїРѕС‚РѕРєР°");
+			System.err.println("Ошибка открытия потока");
 		} finally {
 			if (reader != null) {
 				try {
 					reader.close();
 				} catch(IOException e) {
-					System.err.println("РћС€РёР±РєР° Р·Р°РєСЂС‹С‚РёСЏ РїРѕС‚РѕРєР°");
+					System.err.println("Ошибка закрытия потока");
 				}
 				
 			}
