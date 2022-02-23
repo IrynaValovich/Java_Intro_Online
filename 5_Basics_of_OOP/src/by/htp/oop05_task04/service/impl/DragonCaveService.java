@@ -15,10 +15,8 @@ public class DragonCaveService implements DragonCave<Treasure> {
 	@Override
 	public List<Treasure> getAll() {
 		DAOResource<Treasure> tDAO = provider.getTreasureDAO();
-		List<Treasure> treasures;		
-		
-			treasures = tDAO.loadResource();
-		
+		List<Treasure> treasures;
+		treasures = tDAO.loadResource();		
 		return treasures;
 	}
 
