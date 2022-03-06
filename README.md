@@ -33,3 +33,7 @@
 <a href="https://github.com/IrynaValovich/Java_Intro_Online/tree/master/4_Programming_with_classes/Simplest_classes_and_objects/src/by/htp">Simplest_classes_and_objects</a> - содержит решения 10 задач из блока Простые классы и объекты.
 
 <a href="https://github.com/IrynaValovich/Java_Intro_Online/tree/master/4_Programming_with_classes/Aggregation_and_composition/src/by/htp">Aggregation_and_composition</a> - содержит решения 5 задач из блока Агрегация и композиция.
+
+# 5 Basics of OOP
+
+<a href="https://github.com/IrynaValovich/Java_Intro_Online/tree/master/5_Basics_of_OOP/src/by/htp">5_Basics_of_OOP</a> - содержит решения 5 задач пятого модуля.
